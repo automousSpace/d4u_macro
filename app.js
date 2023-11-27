@@ -5,7 +5,7 @@ var webSocketServer = require('websocket').server;
 const cookieParser = require('cookie-parser');
 const { Telegraf } = require("telegraf");
 const bot = new Telegraf(
-  "6361462744:AAEbWzd8OlyTYnnBARr8AG1z2q8j7FJ2IE4"
+  "4"
 );
 
 var http = require('http');
@@ -35,16 +35,10 @@ let portno = 3512
 let botTries = 0;
 let autoBotStatus = false
 let autoBotRuns = 0
-let sitename = 'BundledSEO'
-let toolname = 'Freepik'
-let botChatID = "-909486624"
+let sitename = ''
+let toolname = ''
+let botChatID = ""
 
-const db = mysql.createConnection({
-  host: '148.251.2.55',
-  user: 'root',
-  password: '7ke^irV07!0h2V8&DycWw',
-  database: 'bundledseo_amember',
-  });
 const util = require('util');
 const query = util.promisify(db.query).bind(db);
 var admin = require('firebase-admin');
